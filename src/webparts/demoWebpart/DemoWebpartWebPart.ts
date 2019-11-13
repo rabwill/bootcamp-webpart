@@ -18,8 +18,13 @@ export interface IDemoWebpartWebPartProps {
 export default class DemoWebpartWebPart extends BaseClientSideWebPart<IDemoWebpartWebPartProps> {
 
   public async render(): Promise<void> {
+    
     const librayInstance=new lib.NameDisplayLibraryLibrary();
-    const libraryName=await librayInstance.DynamicallyLoadname();      
+    const libraryName=await librayInstance.DynamicallyLoadname();  
+    
+    const mathLibraryInstance=new lib.MathCalculationsLibrary();
+    alert(`The sqaure of 2 is${mathLibraryInstance.square(2)}`);
+       
     const element: React.ReactElement<IDemoWebpartProps > = React.createElement(
       DemoWebpart,
       {
