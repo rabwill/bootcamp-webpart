@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "consume-lib-webpart-client-side-solution",
+    "id": "33f1b040-1572-4a6b-b246-31c8ae49ba46",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/consume-lib-webpart.sppkg"
+  }
+}
